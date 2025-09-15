@@ -20,7 +20,7 @@ public class ArtistaService {
         Optional<Artista> artista = artistaRepo.findById(id);
 
         if (artista.isEmpty()) {
-             throw new ResponseStatusException(
+                throw new ResponseStatusException(
                 HttpStatus.NOT_FOUND, "Artista não encontrado."
             );
         }
